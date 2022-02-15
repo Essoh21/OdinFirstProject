@@ -1,4 +1,6 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
+ /*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
+ */
+ 
  * {
      font-family: Roboto;
  }
@@ -8,4 +10,151 @@
      min-height: 100vh;
      display: flex;
      flex-direction: column;
+ }
+ /*  this is the header section */
+ 
+ .header-block {
+     background-color: #1f2937;
+     color: #f9faf6;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom: 100px;
+ }
+ /* first line of the header  */
+ 
+ .header {
+     flex: 1;
+     display: flex;
+     align-items: center;
+     padding-top: 16px;
+     margin-bottom: 50px;
+ }
+ 
+ .right-header-links ul {
+     flex: 1;
+     display: flex;
+     margin: 0px;
+     padding: 0px;
+     gap: 16px;
+ }
+ 
+ .header-logo {
+     flex-shrink: 0;
+     color: #f9faf8;
+     font-size: 24px;
+     text-align: left;
+ }
+ 
+ .header-right-block {
+     width: auto;
+     background-color: #525455;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0px 80px;
+ }
+ 
+ .header-left-block {
+     width: auto;
+ }
+ 
+ a {
+     display: flex;
+     align-items: center;
+     color: #e5e7eb;
+     font-size: 18px;
+     text-decoration: none;
+ }
+ 
+ li {
+     list-style-type: none;
+ }
+ 
+ .heade-s-block {
+     display: flex;
+ }
+ /* second part of the header  */
+ 
+ .header-scd-block {
+     flex: 1;
+     display: flex;
+     justify-content: space-between;
+     gap: 32px;
+ }
+ 
+ h1 {
+     color: f9faf8;
+     font-size: 48px;
+     font-weight: extra-bold;
+ }
+ 
+ .footer {
+     background-color: #1f2937;
+     color: #fff;
+ }
+ 
+ button {
+     background-color: #3882f6;
+     border: 0.5px solid #e5e7eb;
+     border-radius: 5px;
+     color: #e5e7eb;
+     text-align: center;
+     padding: 8px 30px;
+ }
+ 
+ .btn {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .call-toaction {
+     background-color: #3882f6;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin: 5% 20%;
+     padding: 2px 10px;
+     border-radius: 5px;
+ }
+ 
+ .text {
+     display: flex;
+ }
+ 
+ .testimonial {
+     background-color: #e5e7eb;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .testimonial p {
+     max-width: 600px;
+ }
+ 
+ .information-block {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .information-cards {
+     display: flex;
+     gap: 16px;
+ }
+ 
+ .card {
+     width: 150px;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .square {
+     border-radius: 10px;
+     width: 150px;
+     height: 150px;
+     border: solid 3px #3882f6;
  }
