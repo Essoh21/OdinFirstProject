@@ -24,11 +24,14 @@
  /* first line of the header  */
  
  .header {
-     flex: 1;
+     /*flex: 1; */
      display: flex;
      align-items: center;
      padding-top: 16px;
+     justify-content: space-between;
+     gap: 300px;
      margin-bottom: 50px;
+     width: auto;
  }
  
  .right-header-links ul {
@@ -40,10 +43,10 @@
  }
  
  .header-logo {
-     flex-shrink: 0;
+     /*flex-shrink: 0; */
      color: #f9faf8;
      font-size: 24px;
-     text-align: left;
+     /*text-align: left;  */
  }
  
  .header-right-block {
@@ -56,7 +59,7 @@
  }
  
  .header-left-block {
-     width: auto;
+     width: 400px;
  }
  
  a {
@@ -86,12 +89,16 @@
  h1 {
      color: f9faf8;
      font-size: 48px;
-     font-weight: extra-bold;
+     font-weight: 800;
  }
  
  .footer {
      background-color: #1f2937;
      color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 60px;
  }
  
  button {
@@ -114,7 +121,7 @@
      align-items: center;
      justify-content: space-around;
      margin: 5% 20%;
-     padding: 2px 10px;
+     padding: 8px 10px;
      border-radius: 5px;
  }
  
@@ -124,14 +131,29 @@
  
  .testimonial {
      background-color: #e5e7eb;
+     flex: 1;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     padding-bottom: 60px;
  }
  
  .testimonial p {
      max-width: 600px;
+     font-size: 36px;
+     font-style: italic;
+     font-weight: lighter;
+     color: #1f2937;
+ }
+ 
+ .author {
+     padding-left: 400px;
+ }
+ 
+ .testimonial .quote {
+     margin-bottom: 0px;
+     padding-bottom: 0px;
  }
  
  .information-block {
@@ -143,7 +165,7 @@
  
  .information-cards {
      display: flex;
-     gap: 16px;
+     gap: 32px;
  }
  
  .card {
