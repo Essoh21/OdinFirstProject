@@ -26,6 +26,7 @@
  .header {
      /*flex: 1; */
      display: flex;
+     flex-wrap: wrap;
      align-items: center;
      padding-top: 16px;
      justify-content: space-between;
@@ -37,6 +38,7 @@
  .right-header-links ul {
      flex: 1;
      display: flex;
+     flex-wrap: wrap;
      margin: 0px;
      padding: 0px;
      gap: 16px;
@@ -82,6 +84,7 @@
  .header-scd-block {
      flex: 1;
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
      gap: 32px;
  }
@@ -118,6 +121,7 @@
  .call-toaction {
      background-color: #3882f6;
      display: flex;
+     flex-wrap: wrap;
      align-items: center;
      justify-content: space-around;
      margin: 5% 20%;
@@ -131,7 +135,7 @@
  
  .testimonial {
      background-color: #e5e7eb;
-     flex: 1;
+     /*flex: 1 1 auto; */
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -139,21 +143,34 @@
      padding-bottom: 60px;
  }
  
- .testimonial p {
+ .testimonial-container {
      max-width: 600px;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .testimonial .quote {
+     /* max-width: 600px; */
      font-size: 36px;
      font-style: italic;
      font-weight: lighter;
      color: #1f2937;
  }
  
- .author {
-     padding-left: 400px;
+ .testimonial p .author {
+     /* padding-left: 400px;  */
+     max-width: 600px;
+     font-size: 18px;
+     font-weight: 800;
  }
  
  .testimonial .quote {
      margin-bottom: 0px;
      padding-bottom: 0px;
+ }
+ 
+ .author {
+     align-self: flex-end;
  }
  
  .information-block {
@@ -165,6 +182,7 @@
  
  .information-cards {
      display: flex;
+     flex-wrap: wrap;
      gap: 32px;
  }
  
